@@ -1,0 +1,516 @@
+;4596730.447769165;single;Started RNN_native_tau=9_rho=2 2022-02-01_11:52:23.449922
+10;4596756.054162979;single;Started Time Step
+10;4596756.161928177;single;Clustering - Training
+10;4596756.7529678345;_cluster;Loading data
+10;4598309.517383575;_cluster;Determining k
+10;4598310.564041138;_cluster;Native clustering: 28641 -> 14321 (2 ~= 2.00)
+10;4598310.645103455;_cluster;Creating clusterable
+10;4617529.132604599;_cluster;Clustering
+10;4760135.869264603;_cluster;Exporting clustering results
+10;4760168.787717819;single;Training
+10;4760168.998479843;_train;Reading Data
+10;4938148.426771164;_train;Training model
+10;4973339.689254761;_train;Finished training
+10;4973341.6476249695;single;Clustering - Predicting
+10;4973342.767715454;_cluster;Loading data
+10;4974712.867498398;_cluster;Determining k
+10;4974713.85550499;_cluster;Native clustering: 25232 -> 12616 (2 ~= 2.00)
+10;4974713.935613632;_cluster;Creating clusterable
+10;4978516.757965088;_cluster;Clustering
+10;5090669.013023376;_cluster;Exporting clustering results
+10;5090699.9771595;single;Predicting
+10;5090700.191497803;_predict;Loading data
+10;5249458.192586899;_predict;Using most recent model, making predictions
+10;5255575.981616974;_predict;Exporting predictions
+11;5255609.534502029;single;Started Time Step
+11;5255609.637975693;single;Clustering - Training
+11;5255610.432386398;_cluster;Already done
+11;5255610.5263233185;single;Training
+11;5255610.754728317;_train;Reading Data
+11;5422168.097019196;_train;Training model
+11;5497703.04775238;_train;Finished training
+11;5497705.090999603;single;Clustering - Predicting
+11;5497706.270456314;_cluster;Loading data
+11;5499216.052055359;_cluster;Determining k
+11;5499217.122554779;_cluster;Native clustering: 35893 -> 17947 (2 ~= 2.00)
+11;5499217.203378677;_cluster;Creating clusterable
+11;5506666.46695137;_cluster;Clustering
+11;5736692.981958389;_cluster;Exporting clustering results
+11;5736734.934568405;single;Predicting
+11;5736735.214233398;_predict;Loading data
+11;5960378.786563873;_predict;Using most recent model, making predictions
+11;5965728.77573967;_predict;Exporting predictions
+12;5965784.065723419;single;Started Time Step
+12;5965784.280061722;single;Clustering - Training
+12;5965785.810947418;_cluster;Already done
+12;5965785.981655121;single;Training
+12;5965786.487817764;_train;Reading Data
+12;6196541.8400764465;_train;Training model
+12;6225984.18712616;_train;Finished training
+12;6225986.034631729;single;Clustering - Predicting
+12;6225987.282991409;_cluster;Loading data
+12;6227563.726902008;_cluster;Determining k
+12;6227564.864397049;_cluster;Native clustering: 42359 -> 21180 (2 ~= 2.00)
+12;6227564.945459366;_cluster;Creating clusterable
+12;6235576.133966446;_cluster;Clustering
+12;6551595.918178558;_cluster;Exporting clustering results
+12;6551644.316911697;single;Predicting
+12;6551644.5553302765;_predict;Loading data
+12;6817441.554784775;_predict;Using most recent model, making predictions
+12;6824834.165096283;_predict;Exporting predictions
+13;6824891.632318497;single;Started Time Step
+13;6824891.729831696;single;Clustering - Training
+13;6824892.488002777;_cluster;Already done
+13;6824892.580270767;single;Training
+13;6824892.858505249;_train;Reading Data
+13;7089104.621887207;_train;Training model
+13;7118029.882907867;_train;Finished training
+13;7118031.909227371;single;Clustering - Predicting
+13;7118033.172130585;_cluster;Loading data
+13;7119654.614448547;_cluster;Determining k
+13;7119655.746221542;_cluster;Native clustering: 46566 -> 23283 (2 ~= 2.00)
+13;7119655.828237534;_cluster;Creating clusterable
+13;7131390.772819519;_cluster;Clustering
+13;7494522.000551224;_cluster;Exporting clustering results
+13;7494577.386856079;single;Predicting
+13;7494577.642917633;_predict;Loading data
+13;7779283.627510071;_predict;Using most recent model, making predictions
+13;7785301.870346069;_predict;Exporting predictions
+14;7785363.707780838;single;Started Time Step
+14;7785363.803863525;single;Clustering - Training
+14;7785364.604473114;_cluster;Already done
+14;7785364.692687988;single;Training
+14;7785364.981174469;_train;Reading Data
+14;8074293.608903885;_train;Training model
+14;8106220.508098602;_train;Finished training
+14;8106222.622156143;single;Clustering - Predicting
+14;8106223.98853302;_cluster;Loading data
+14;8107938.488006592;_cluster;Determining k
+14;8107939.674377441;_cluster;Native clustering: 50594 -> 25297 (2 ~= 2.00)
+14;8107939.760923386;_cluster;Creating clusterable
+14;8120150.994539261;_cluster;Clustering
+14;8547350.678682327;_cluster;Exporting clustering results
+14;8547409.321069717;single;Predicting
+14;8547409.582138062;_predict;Loading data
+14;8857238.259792328;_predict;Using most recent model, making predictions
+14;8863388.154506683;_predict;Exporting predictions
+15;8863455.729484558;single;Started Time Step
+15;8863455.827951431;single;Clustering - Training
+15;8863456.634283066;_cluster;Already done
+15;8863456.72750473;single;Training
+15;8863457.078695297;_train;Reading Data
+15;9187234.25245285;_train;Training model
+15;9220534.992456436;_train;Finished training
+15;9220536.986112595;single;Clustering - Predicting
+15;9220538.08259964;_cluster;Loading data
+15;9222300.80485344;_cluster;Determining k
+15;9222302.210092545;_cluster;Native clustering: 53292 -> 26646 (2 ~= 2.00)
+15;9222302.280664444;_cluster;Creating clusterable
+15;9233754.444122314;_cluster;Clustering
+15;9701472.470998764;_cluster;Exporting clustering results
+15;9701534.371376038;single;Predicting
+15;9701534.628152847;_predict;Loading data
+15;10019104.466438293;_predict;Using most recent model, making predictions
+15;10025391.201019287;_predict;Exporting predictions
+16;10025459.003210068;single;Started Time Step
+16;10025459.114313126;single;Clustering - Training
+16;10025459.899902344;_cluster;Already done
+16;10025459.990739822;single;Training
+16;10025460.326194763;_train;Reading Data
+16;10366583.358049393;_train;Training model
+16;10400901.804685593;_train;Finished training
+16;10400904.638767242;single;Clustering - Predicting
+16;10400905.998706818;_cluster;Loading data
+16;10402664.228439331;_cluster;Determining k
+16;10402665.315628052;_cluster;Native clustering: 55313 -> 27657 (2 ~= 2.00)
+16;10402665.397405624;_cluster;Creating clusterable
+16;10414734.352111816;_cluster;Clustering
+16;10944060.762405396;_cluster;Exporting clustering results
+16;10944126.641988754;single;Predicting
+16;10944126.918077469;_predict;Loading data
+16;11292371.268510818;_predict;Using most recent model, making predictions
+16;11299066.944360733;_predict;Exporting predictions
+17;11299138.747215271;single;Started Time Step
+17;11299138.84472847;single;Clustering - Training
+17;11299139.640569687;_cluster;Already done
+17;11299139.734268188;single;Training
+17;11299140.087366104;_train;Reading Data
+17;11653089.751720428;_train;Training model
+17;11686221.446037292;_train;Finished training
+17;11686223.584651947;single;Clustering - Predicting
+17;11686224.86615181;_cluster;Loading data
+17;11688047.780513763;_cluster;Determining k
+17;11688048.903465271;_cluster;Native clustering: 57050 -> 28525 (2 ~= 2.00)
+17;11688048.99597168;_cluster;Creating clusterable
+17;11703872.106313705;_cluster;Clustering
+17;12265697.222709656;_cluster;Exporting clustering results
+17;12265767.723798752;single;Predicting
+17;12265768.001556396;_predict;Loading data
+17;12623814.974784851;_predict;Using most recent model, making predictions
+17;12630687.962293625;_predict;Exporting predictions
+18;12630760.971784592;single;Started Time Step
+18;12630761.073589325;single;Clustering - Training
+18;12630761.859893799;_cluster;Already done
+18;12630761.950016022;single;Training
+18;12630762.32457161;_train;Reading Data
+18;12995427.657842636;_train;Training model
+18;13029256.704807281;_train;Finished training
+18;13029259.46688652;single;Clustering - Predicting
+18;13029260.746955872;_cluster;Loading data
+18;13031156.46982193;_cluster;Determining k
+18;13031157.912492752;_cluster;Native clustering: 58558 -> 29279 (2 ~= 2.00)
+18;13031158.027887344;_cluster;Creating clusterable
+18;13044999.511003494;_cluster;Clustering
+18;13631857.753753662;_cluster;Exporting clustering results
+18;13631928.10678482;single;Predicting
+18;13631928.383350372;_predict;Loading data
+18;14000468.288898468;_predict;Using most recent model, making predictions
+18;14009470.605134964;_predict;Exporting predictions
+19;14009545.50242424;single;Started Time Step
+19;14009545.601606369;single;Clustering - Training
+19;14009546.357154846;_cluster;Already done
+19;14009546.447515488;single;Training
+19;14009546.854257584;_train;Reading Data
+19;14385041.773319244;_train;Training model
+19;14449712.742805481;_train;Finished training
+19;14449715.618371964;single;Clustering - Predicting
+19;14449716.989278793;_cluster;Loading data
+19;14451514.742612839;_cluster;Determining k
+19;14451515.799283981;_cluster;Native clustering: 60082 -> 30041 (2 ~= 2.00)
+19;14451515.882015228;_cluster;Creating clusterable
+19;14466385.043859482;_cluster;Clustering
+19;15050778.93614769;_cluster;Exporting clustering results
+19;15050851.004600525;single;Predicting
+19;15050851.28569603;_predict;Loading data
+19;15419600.382328033;_predict;Using most recent model, making predictions
+19;15426309.815883636;_predict;Exporting predictions
+20;15426385.81085205;single;Started Time Step
+20;15426385.909557343;single;Clustering - Training
+20;15426386.693239212;_cluster;Already done
+20;15426386.78431511;single;Training
+20;15426387.218952179;_train;Reading Data
+20;15813149.310588837;_train;Training model
+20;15849870.000839233;_train;Finished training
+20;15849872.094631195;single;Clustering - Predicting
+20;15849873.310089111;_cluster;Loading data
+20;15851628.896474838;_cluster;Determining k
+20;15851629.917621613;_cluster;Native clustering: 61176 -> 30588 (2 ~= 2.00)
+20;15851629.995584488;_cluster;Creating clusterable
+20;15866455.167531967;_cluster;Clustering
+20;16472742.988348007;_cluster;Exporting clustering results
+20;16472816.915750504;single;Predicting
+20;16472817.191839218;_predict;Loading data
+20;16839142.218589783;_predict;Using most recent model, making predictions
+20;16845810.575723648;_predict;Exporting predictions
+21;16845890.713214874;single;Started Time Step
+21;16845890.818595886;single;Clustering - Training
+21;16845891.5913105;_cluster;Already done
+21;16845891.677856445;single;Training
+21;16845892.110347748;_train;Reading Data
+21;17226820.190668106;_train;Training model
+21;17283116.970062256;_train;Finished training
+21;17283119.117975235;single;Clustering - Predicting
+21;17283120.518922806;_cluster;Loading data
+21;17284937.61563301;_cluster;Determining k
+21;17284938.675642014;_cluster;Native clustering: 61990 -> 30995 (2 ~= 2.00)
+21;17284938.75694275;_cluster;Creating clusterable
+21;17305047.835826874;_cluster;Clustering
+21;17906252.70342827;_cluster;Exporting clustering results
+21;17906330.330610275;single;Predicting
+21;17906330.621242523;_predict;Loading data
+21;18287493.698358536;_predict;Using most recent model, making predictions
+21;18294390.808582306;_predict;Exporting predictions
+22;18294470.306634903;single;Started Time Step
+22;18294470.408201218;single;Clustering - Training
+22;18294471.209287643;_cluster;Already done
+22;18294471.30036354;single;Training
+22;18294471.75550461;_train;Reading Data
+22;18694624.985694885;_train;Training model
+22;18730480.324029922;_train;Finished training
+22;18730482.39159584;single;Clustering - Predicting
+22;18730483.70575905;_cluster;Loading data
+22;18732315.125465393;_cluster;Determining k
+22;18732316.192388535;_cluster;Native clustering: 62837 -> 31419 (2 ~= 2.00)
+22;18732316.274881363;_cluster;Creating clusterable
+22;18750175.96268654;_cluster;Clustering
+22;19423594.37394142;_cluster;Exporting clustering results
+22;19423671.46730423;single;Predicting
+22;19423671.753644943;_predict;Loading data
+22;19813553.771018982;_predict;Using most recent model, making predictions
+22;19820490.892648697;_predict;Exporting predictions
+23;19820578.24087143;single;Started Time Step
+23;19820578.419446945;single;Clustering - Training
+23;19820579.8766613;_cluster;Already done
+23;19820580.041646957;single;Training
+23;19820580.895900726;_train;Reading Data
+23;20227658.727884293;_train;Training model
+23;20265991.309165955;_train;Finished training
+23;20266010.43319702;single;Clustering - Predicting
+23;20266012.191057205;_cluster;Loading data
+23;20267874.32718277;_cluster;Determining k
+23;20267875.401973724;_cluster;Native clustering: 63606 -> 31803 (2 ~= 2.00)
+23;20267875.48494339;_cluster;Creating clusterable
+23;20286016.448020935;_cluster;Clustering
+23;20916299.879312515;_cluster;Exporting clustering results
+23;20916379.330396652;single;Predicting
+23;20916379.616498947;_predict;Loading data
+23;21311376.554965973;_predict;Using most recent model, making predictions
+23;21318274.41048622;_predict;Exporting predictions
+24;21318354.151248932;single;Started Time Step
+24;21318354.25233841;single;Clustering - Training
+24;21318355.026245117;_cluster;Already done
+24;21318355.130195618;single;Training
+24;21318355.617523193;_train;Reading Data
+24;21726899.132728577;_train;Training model
+24;21762317.884922028;_train;Finished training
+24;21762320.145845413;single;Clustering - Predicting
+24;21762321.420669556;_cluster;Loading data
+24;21764183.010578156;_cluster;Determining k
+24;21764184.074163437;_cluster;Native clustering: 64085 -> 32043 (2 ~= 2.00)
+24;21764184.154987335;_cluster;Creating clusterable
+24;21781538.845062256;_cluster;Clustering
+24;22444280.214071274;_cluster;Exporting clustering results
+24;22444360.06975174;single;Predicting
+24;22444360.410690308;_predict;Loading data
+24;22839295.869112015;_predict;Using most recent model, making predictions
+24;22846272.920370102;_predict;Exporting predictions
+25;22846355.351686478;single;Started Time Step
+25;22846355.45349121;single;Clustering - Training
+25;22846356.224536896;_cluster;Already done
+25;22846356.313467026;single;Training
+25;22846356.82106018;_train;Reading Data
+25;23258485.82792282;_train;Training model
+25;23321636.452674866;_train;Finished training
+25;23321637.722969055;single;Clustering - Predicting
+25;23321639.38355446;_cluster;Loading data
+25;23323524.72281456;_cluster;Determining k
+25;23323525.87556839;_cluster;Native clustering: 64595 -> 32298 (2 ~= 2.00)
+25;23323525.957107544;_cluster;Creating clusterable
+25;23342076.137781143;_cluster;Clustering
+25;24018294.073343277;_cluster;Exporting clustering results
+25;24018376.43146515;single;Predicting
+25;24018376.725673676;_predict;Loading data
+25;24415263.524770737;_predict;Using most recent model, making predictions
+25;24422330.07287979;_predict;Exporting predictions
+26;24422413.234233856;single;Started Time Step
+26;24422413.331747055;single;Clustering - Training
+26;24422414.09420967;_cluster;Already done
+26;24422414.182424545;single;Training
+26;24422414.70170021;_train;Reading Data
+26;24837010.241031647;_train;Training model
+26;24873063.699245453;_train;Finished training
+26;24873066.11919403;single;Clustering - Predicting
+26;24873067.377090454;_cluster;Loading data
+26;24874918.57624054;_cluster;Determining k
+26;24874919.657230377;_cluster;Native clustering: 64991 -> 32496 (2 ~= 2.00)
+26;24874919.746398926;_cluster;Creating clusterable
+26;24893780.56383133;_cluster;Clustering
+26;25583018.55325699;_cluster;Exporting clustering results
+26;25583100.08430481;single;Predicting
+26;25583100.383281708;_predict;Loading data
+26;25985746.311426163;_predict;Using most recent model, making predictions
+26;25992883.49199295;_predict;Exporting predictions
+27;25992963.72795105;single;Started Time Step
+27;25992963.8338089;single;Clustering - Training
+27;25992964.589834213;_cluster;Already done
+27;25992964.681863785;single;Training
+27;25992965.225458145;_train;Reading Data
+27;26395968.099832535;_train;Training model
+27;26431900.250434875;_train;Finished training
+27;26431903.139829636;single;Clustering - Predicting
+27;26431904.398441315;_cluster;Loading data
+27;26433729.01248932;_cluster;Determining k
+27;26433730.044841766;_cluster;Native clustering: 65318 -> 32659 (2 ~= 2.00)
+27;26433730.124235153;_cluster;Creating clusterable
+27;26456088.646411896;_cluster;Clustering
+27;27150726.063013077;_cluster;Exporting clustering results
+27;27150810.840129852;single;Predicting
+27;27150811.15579605;_predict;Loading data
+27;27540554.64029312;_predict;Using most recent model, making predictions
+27;27547730.60131073;_predict;Exporting predictions
+28;27547813.298225403;single;Started Time Step
+28;27547813.408851624;single;Clustering - Training
+28;27547814.195871353;_cluster;Already done
+28;27547814.282655716;single;Training
+28;27547814.843177795;_train;Reading Data
+28;27969997.571468353;_train;Training model
+28;28005993.874549866;_train;Finished training
+28;28005996.115922928;single;Clustering - Predicting
+28;28005997.27320671;_cluster;Loading data
+28;28007815.594911575;_cluster;Determining k
+28;28007816.630125046;_cluster;Native clustering: 65483 -> 32742 (2 ~= 2.00)
+28;28007816.709280014;_cluster;Creating clusterable
+28;28025916.45336151;_cluster;Clustering
+28;28719764.889240265;_cluster;Exporting clustering results
+28;28719848.15764427;single;Predicting
+28;28719848.44636917;_predict;Loading data
+28;29110402.680158615;_predict;Using most recent model, making predictions
+28;29117234.95221138;_predict;Exporting predictions
+29;29117316.14613533;single;Started Time Step
+29;29117316.24364853;single;Clustering - Training
+29;29117316.98870659;_cluster;Already done
+29;29117317.074775696;single;Training
+29;29117317.652225494;_train;Reading Data
+29;29522428.172826767;_train;Training model
+29;29561601.855278015;_train;Finished training
+29;29561604.721546173;single;Clustering - Predicting
+29;29561606.041431427;_cluster;Loading data
+29;29563471.378087997;_cluster;Determining k
+29;29563472.437143326;_cluster;Native clustering: 65490 -> 32745 (2 ~= 2.00)
+29;29563472.518205643;_cluster;Creating clusterable
+29;29580692.828178406;_cluster;Clustering
+29;30310583.90903473;_cluster;Exporting clustering results
+29;30310667.492628098;single;Predicting
+29;30310667.77586937;_predict;Loading data
+29;30712959.28120613;_predict;Using most recent model, making predictions
+29;30720105.088949203;_predict;Exporting predictions
+30;30720189.18943405;single;Started Time Step
+30;30720189.285993576;single;Clustering - Training
+30;30720190.042495728;_cluster;Already done
+30;30720190.12928009;single;Training
+30;30720190.720319748;_train;Reading Data
+30;31140313.460111618;_train;Training model
+30;31181168.0188179;_train;Finished training
+30;31181170.435667038;single;Clustering - Predicting
+30;31181171.833753586;_cluster;Loading data
+30;31183053.990364075;_cluster;Determining k
+30;31183055.078029633;_cluster;Native clustering: 66104 -> 33052 (2 ~= 2.00)
+30;31183055.161714554;_cluster;Creating clusterable
+30;31201281.817913055;_cluster;Clustering
+30;31908728.368997574;_cluster;Exporting clustering results
+30;31908814.937591553;single;Predicting
+30;31908815.265893936;_predict;Loading data
+30;32316949.75709915;_predict;Using most recent model, making predictions
+30;32324059.61370468;_predict;Exporting predictions
+31;32324140.989780426;single;Started Time Step
+31;32324141.084432602;single;Clustering - Training
+31;32324141.830682755;_cluster;Already done
+31;32324141.916513443;single;Training
+31;32324142.537117004;_train;Reading Data
+31;32735215.52848816;_train;Training model
+31;32793934.92603302;_train;Finished training
+31;32793935.39428711;single;Clustering - Predicting
+31;32793936.88249588;_cluster;Loading data
+31;32795809.91744995;_cluster;Determining k
+31;32795810.98175049;_cluster;Native clustering: 66935 -> 33468 (2 ~= 2.00)
+31;32795811.081409454;_cluster;Creating clusterable
+31;32812874.117136;_cluster;Clustering
+31;33505840.351343155;_cluster;Exporting clustering results
+31;33505926.53107643;single;Predicting
+31;33505926.822662354;_predict;Loading data
+31;33916603.43551636;_predict;Using most recent model, making predictions
+31;33923764.969825745;_predict;Exporting predictions
+32;33923849.685907364;single;Started Time Step
+32;33923849.782943726;single;Clustering - Training
+32;33923850.51584244;_cluster;Already done
+32;33923850.600004196;single;Training
+32;33923851.231098175;_train;Reading Data
+32;34342819.380521774;_train;Training model
+32;34381616.18566513;_train;Finished training
+32;34381618.562698364;single;Clustering - Predicting
+32;34381619.90427971;_cluster;Loading data
+32;34383498.623371124;_cluster;Determining k
+32;34383499.7344017;_cluster;Native clustering: 66984 -> 33492 (2 ~= 2.00)
+32;34383499.81665611;_cluster;Creating clusterable
+32;34401720.09038925;_cluster;Clustering
+32;35127469.1426754;_cluster;Exporting clustering results
+32;35127554.81123924;single;Predicting
+32;35127555.12523651;_predict;Loading data
+32;35550279.20985222;_predict;Using most recent model, making predictions
+32;35562714.807510376;_predict;Exporting predictions
+33;35562798.02799225;single;Started Time Step
+33;35562798.13838005;single;Clustering - Training
+33;35562798.85649681;_cluster;Already done
+33;35562798.94208908;single;Training
+33;35562799.60107803;_train;Reading Data
+33;35983140.95330238;_train;Training model
+33;36049541.25714302;_train;Finished training
+33;36049543.681144714;single;Clustering - Predicting
+33;36049544.96574402;_cluster;Loading data
+33;36051437.27636337;_cluster;Determining k
+33;36051438.338041306;_cluster;Native clustering: 67174 -> 33587 (2 ~= 2.00)
+33;36051438.415288925;_cluster;Creating clusterable
+33;36067537.33301163;_cluster;Clustering
+33;36764895.52497864;_cluster;Exporting clustering results
+33;36764981.89020157;single;Predicting
+33;36764982.18154907;_predict;Loading data
+33;37178722.84436226;_predict;Using most recent model, making predictions
+33;37185815.27233124;_predict;Exporting predictions
+34;37185901.02481842;single;Started Time Step
+34;37185901.12328529;single;Clustering - Training
+34;37185901.89433098;_cluster;Already done
+34;37185901.98349953;single;Training
+34;37185902.663469315;_train;Reading Data
+34;37618451.35259628;_train;Training model
+34;37675419.49534416;_train;Finished training
+34;37675419.99077797;single;Clustering - Predicting
+34;37675421.34261131;_cluster;Loading data
+34;37677320.175647736;_cluster;Determining k
+34;37677321.24590874;_cluster;Native clustering: 67321 -> 33661 (2 ~= 2.00)
+34;37677321.331977844;_cluster;Creating clusterable
+34;37696012.8762722;_cluster;Clustering
+34;38423593.85180473;_cluster;Exporting clustering results
+34;38423682.32011795;single;Predicting
+34;38423682.61575699;_predict;Loading data
+34;38839288.893699646;_predict;Using most recent model, making predictions
+34;38846499.777793884;_predict;Exporting predictions
+35;38846584.31124687;single;Started Time Step
+35;38846584.434986115;single;Clustering - Training
+35;38846585.24465561;_cluster;Already done
+35;38846585.33811569;single;Training
+35;38846586.127758026;_train;Reading Data
+35;39280900.802373886;_train;Training model
+35;39317499.55582619;_train;Finished training
+35;39317501.68442726;single;Clustering - Predicting
+35;39317502.85124779;_cluster;Loading data
+35;39319370.339632034;_cluster;Determining k
+35;39319371.393203735;_cluster;Native clustering: 68435 -> 34218 (2 ~= 2.00)
+35;39319371.47426605;_cluster;Creating clusterable
+35;39341918.78199577;_cluster;Clustering
+35;40068892.281770706;_cluster;Exporting clustering results
+35;40068986.3550663;single;Predicting
+35;40068986.65976524;_predict;Loading data
+35;40499021.562576294;_predict;Using most recent model, making predictions
+35;40506603.26051712;_predict;Exporting predictions
+36;40506692.230939865;single;Started Time Step
+36;40506692.34395027;single;Clustering - Training
+36;40506693.12596321;_cluster;Already done
+36;40506693.21537018;single;Training
+36;40506693.94159317;_train;Reading Data
+36;40956385.469436646;_train;Training model
+36;41024858.36982727;_train;Finished training
+36;41024861.266851425;single;Clustering - Predicting
+36;41024862.56098747;_cluster;Loading data
+36;41026778.821229935;_cluster;Determining k
+36;41026779.90078926;_cluster;Native clustering: 68519 -> 34260 (2 ~= 2.00)
+36;41026779.98304367;_cluster;Creating clusterable
+36;41046144.720077515;_cluster;Clustering
+36;41769362.31327057;_cluster;Exporting clustering results
+36;41769451.652526855;single;Predicting
+36;41769451.94387436;_predict;Loading data
+36;42190409.48057175;_predict;Using most recent model, making predictions
+36;42197585.007190704;_predict;Exporting predictions
+37;42197669.521808624;single;Started Time Step
+37;42197669.61598396;single;Clustering - Training
+37;42197670.355796814;_cluster;Already done
+37;42197670.44019699;single;Training
+37;42197671.21195793;_train;Reading Data
+37;42621507.707595825;_train;Training model
+37;42682296.45895958;_train;Finished training
+37;42682298.77114296;single;Clustering - Predicting
+37;42682300.18115044;_cluster;Loading data
+37;42684310.4429245;_cluster;Determining k
+37;42684311.55252457;_cluster;Native clustering: 68354 -> 34177 (2 ~= 2.00)
+37;42684311.6338253;_cluster;Creating clusterable
+37;42699037.269592285;_cluster;Clustering
+37;43452406.77547455;_cluster;Exporting clustering results
+37;43452498.37756157;single;Predicting
+37;43452498.68059158;_predict;Loading data
+37;43881579.22029495;_predict;Using most recent model, making predictions
+37;43889269.65236664;_predict;Exporting predictions
+Wrap;43889355.326890945;single;Computing Results
+Wrap;43889356.55450821;_results;Extracting predictions
+Wrap;44391020.540714264;_results;Computing Statistics
+Wrap;44404271.837472916;_results;Exporting results
+Wrap;44404377.80022621;single;Cleanup
+Wrap;44404866.44244194;single;Finished

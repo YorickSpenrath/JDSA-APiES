@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<ConsumerCSSettings>
+	<parameter clustering_parameter_type="cluster_size"/>
+	<parameter clustering_parameter="2"/>
+	<parameter clustering_method="native"/>
+	<parameter model_type="TAX"/>
+	<parameter tau="9"/>
+</ConsumerCSSettings>
