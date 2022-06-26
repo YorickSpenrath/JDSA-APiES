@@ -1,5 +1,5 @@
-# JDSA-APiES
-Repository for the Aggregated Prediction in Event Streams framework, for the paper "Aggregated Prediction in Event Streams of Shopper behaviour" for the International Journal of Data Science and Analytics, Special Issue on Domain-Driven Data Mining. 
+# ITEM-CAPiES
+Repository for the Cluster-based Aggregations for Prediction in Event Streams submission to the Information Technology and Management journal.
 
 To run the code, first create a virtual environment (Python 3.8) and install the requirements
 
