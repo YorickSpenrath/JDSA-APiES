@@ -2,3 +2,6 @@ APiES/_cdh_local.py
 __pycache__/
 venv
 .idea
+
+results/eventlogs/common/figures
+results/shoppers/common/figures

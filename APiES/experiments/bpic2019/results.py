@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import warnings
 from pathlib import Path
 
@@ -73,7 +74,7 @@ def get_single_entity_label(single, mt, cm, cpt, **kwargs):
         return f'{p1} ({get_label_thing(mt, cm, cpt, **kwargs)})'
 
 
-def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
+def plot(fn_in, single=False, fn_out=None, c='case_rmse', add_regions=False, **kwargs):
     # Import full data
     df = import_df(fn_in).set_index('experiment')
 
@@ -116,7 +117,8 @@ def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
     y_top = df[c].max() * 1.1
 
     # Create a plot for each model x clustering parameter type
-    for ((mt, cm, cpt), df_graph), ax in zip(df.groupby(plot_parameters), axarr.flatten()):
+    for ((model_type, clustering_method, clustering_parameter_type), df_graph), ax in zip(df.groupby(plot_parameters),
+                                                                                          axarr.flatten()):
 
         # Remove None/1 values (special values)
         mask = df_graph['clustering_parameter'].isna() | (df_graph['clustering_parameter'] == 1)
@@ -124,22 +126,24 @@ def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
         y = df_graph.loc[~mask, c]
 
         # Plot data
-        colour = get_colour(mt, cm, cpt)
+        colour = get_colour(model_type, clustering_method, clustering_parameter_type)
 
-        ax.plot(x, y, label=get_parameter_label(single, mt, cm, cpt, **kwargs), color=colour)
+        ax.plot(x, y,
+                label=get_parameter_label(single, model_type, clustering_method, clustering_parameter_type, **kwargs),
+                color=colour)
 
         # Add None/1 values (special values)
         df_1 = df_graph.loc[df_graph['clustering_parameter'] == 1, c]
         df_none = df_graph.loc[df_graph['clustering_parameter'].isna(), c]
 
         # Interpretation of None/1 values depends on cluster size
-        if cpt == 'cluster_size':
+        if clustering_parameter_type == 'cluster_size':
             df_entity = df_1
             df_single = df_none
             x_entity = 1
             x_single = max(df[CLUSTERING_PARAMETER])
             label_x = r'$\rho$'
-        elif cpt == 'cluster_count':
+        elif clustering_parameter_type == 'cluster_count':
             df_entity = df_none
             df_single = df_1
             x_entity = max(df[CLUSTERING_PARAMETER])
@@ -150,14 +154,16 @@ def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
 
         # Plot the None/1 values as horizontal lines
         if len(df_entity) == 1:
-            ax.plot([x_entity], [df_entity.iloc[0]], mfc=colour, ms=10, marker='^s'[cm == 'native'],
+            ax.plot([x_entity], [df_entity.iloc[0]], mfc=colour, ms=10, marker='^s'[clustering_method == 'native'],
                     mec='k',
                     ls='',
-                    label=get_single_entity_label(single, mt, cm, cpt, **kwargs))
+                    label=get_single_entity_label(single, model_type, clustering_method, clustering_parameter_type,
+                                                  **kwargs))
         if len(df_single) == 1:
-            ax.plot([x_single], [df_single.iloc[0]], mfc=colour, ms=10, marker='vo'[cm == 'native'],
+            ax.plot([x_single], [df_single.iloc[0]], mfc=colour, ms=10, marker='vo'[clustering_method == 'native'],
                     ls='', mec='k',
-                    label=get_single_cluster_label(single, mt, cm, cpt, **kwargs))
+                    label=get_single_cluster_label(single, model_type, clustering_method, clustering_parameter_type,
+                                                   **kwargs))
         # Final make-up
 
         ax.set_ylabel(convert(c))
@@ -166,7 +172,7 @@ def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
         if not single:
             ax.legend()
             ax.set_ylim(y_bot, y_top)
-            ax.set_title(make_title(cpt, mt, cm))
+            ax.set_title(make_title(clustering_parameter_type, model_type, clustering_method))
 
     if not single:
         # Remove y-labels of non-left axes
@@ -187,6 +193,16 @@ def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
     if single:
         f.set_size_inches(w=8, h=4)
         axarr.flatten()[0].legend(ncol=1)
+        if add_regions:
+            ax: plt.Axes = axarr.flatten()[0]
+            ax.axvline(x=50, ls=':', color='k')
+            ax.axvline(x=100, ls=':', color='k')
+            y = ax.get_ylim()[0]*0.4 + ax.get_ylim()[1]*0.6
+            bbox_props = dict(boxstyle="round", fc="w", ec="0.5", alpha=0.9)
+            ax.text(25, y, r"$\mathtt{I}$", ha="center", va="center", size=10, bbox=bbox_props)
+            ax.text(75, y, r"$\mathtt{II}$", ha="center", va="center", size=10, bbox=bbox_props)
+            ax.text(50 + 0.5 * ax.get_xlim()[1], y, r"$\mathtt{III}$", ha="center", va="center", size=10, bbox=bbox_props)
+
     else:
         f.set_size_inches(w=3.5 * n_col + 1, h=4.5 * n_row + 1)
 
@@ -197,13 +213,14 @@ def plot(fn_in, single=False, fn_out=None, c='case_rmse', **kwargs):
 
     (Path(fn_in).parent / 'figures').mkdir(exist_ok=True, parents=True)
 
-    plt.savefig(Path(fn_in).parent / 'figures' / f'{fn_out}.pdf', bbox_inches='tight')
-    plt.savefig(Path(fn_in).parent / 'figures' / f'{fn_out}.svg', bbox_inches='tight')
+    plt.savefig(Path(fn_in).parent / 'figures' / f'{fn_out}.pdf', bbox_inches='tight', pad_inches=0)
+    plt.savefig(Path(fn_in).parent / 'figures' / f'{fn_out}.svg', bbox_inches='tight', pad_inches=0)
     plt.show()
 
 
 if __name__ == '__main__':
     # combine('rho')
-    plot(fn_combined_results_time_mean('rho'), single=True, fn_out='case_rmse', c='case_rmse', **{MODEL_TYPE: 'AHOT'})
-    plot(fn_combined_results_time_mean('rho'), single=True, fn_out='cluster_rmse', c='cluster_rmse',
-         **{MODEL_TYPE: 'AHOT'})
+    plot(fn_combined_results_time_mean('rho'), single=True, fn_out='case_rmse', c='case_rmse', **{MODEL_TYPE: 'AHOT'},
+         add_regions=True)
+    # plot(fn_combined_results_time_mean('rho'), single=True, fn_out='cluster_rmse', c='cluster_rmse',
+    #      **{MODEL_TYPE: 'AHOT'})

@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 from functions import heatmap
 from functions.dataframe_operations import import_df
 from APiES import constants as sc
-from APiES.data_handlers import AbstractDataHandler, AbstractGCSSettings
+from ...data_handlers import AbstractDataHandler, AbstractGCSSettings
 from APiES.data_handlers.consumer_data_handler import ConsumerDataHandler
 from APiES.experiments.consumers.combine import fn_combined_results_global, \
     fn_combined_results_time_mean, all_completed_cdh
@@ -224,8 +224,7 @@ def create_time_f1():
     plt.show()
 
 
-if __name__ == '__main__':
-
+def compute_results():
     def filter_rho(x):
         if pd.isna(x):
             return True
@@ -236,3 +235,6 @@ if __name__ == '__main__':
 
 
     compute_figures('rho', filter_kwargs={sc.CLUSTERING_PARAMETER: filter_rho})
+
+if __name__ == '__main__':
+    compute_results()
